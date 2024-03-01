@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:id="@+id/idCardView"
+    app:cardPreventCornerOverlap="true"
+    android:animateLayoutChanges="true"
+    app:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/idCardViewRelativeLayout">
+
+        <!-- ImageVIew to display our Course Image -->
+        <ImageView
+            android:id="@+id/idMarkaResmi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/back_hand" />
+
+        <!-- Text View to display Course Name -->
+        <TextView
+            android:id="@+id/idMarkaAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/idMarkaResmi"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/test_header"
+            android:textStyle="bold" />
+
+        <!-- Text VIew to display Course Rating -->
+        <!-- Image used in present in drawable folder -->
+        <TextView
+            android:id="@+id/idMarkaAciklama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idMarkaAdi"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/idMarkaResmi"
+            android:drawablePadding="2dp"
+            android:ellipsize="end"
+            android:text="@string/test_paragraph"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-medium"
+
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
