@@ -45,6 +45,7 @@ public class DrinkFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+        tumBoykotListesi.clear();
         apiService= APIClient.getClient().create(APIService.class);
         Call<List<BoykotMarka>> listCall=apiService.getAllBoykotUrunlerByType(UrunTip.ICECEK.getEtiket());
         listCall.enqueue(new Callback<List<BoykotMarka>>() {
@@ -66,9 +67,4 @@ public class DrinkFragment extends Fragment {
         });
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        tumBoykotListesi.clear();
-    }
 }

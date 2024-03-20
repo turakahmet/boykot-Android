@@ -3,4 +3,19 @@
     <string name="home_page">Giris</string>
     <string name="test_header">test basligi</string>
     <string name="test_paragraph">since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently withest3</string>
+    <string name="submit">barkod</string>
+    <string name="barkodInfo">Barkod ya da Marka okutunuz</string>
+    <string name="HEPSI">Hepsi</string>
+    <string name="GIDA">Gıda</string>
+    <string name="ICECEK">İçecek</string>
+    <string name="TEMIZLIK">Temizlik</string>
+    <string name="KOZMETIK">Kozmetik</string>
+    <string name="MEDYA">Medya</string>
+    <string name="TEKNOLOJI">Teknoloji</string>
+    <string name="SIGARA">Sigara</string>
+    <string name="AKARYAKIT">Akaryakıt</string>
+    <string name="ILAC">İlaç</string>
+    <string name="DIGER">Diğer</string>
+    <string name="boykotUrun">Bu ürün boykot edilen ürünler \nİÇERİSİNDEDİR.</string>
+    <string name="boykotUrunDegil">Bu ürün boykot edilen ürünler içerisinde \nDEĞİLDİR.</string>
 </resources>

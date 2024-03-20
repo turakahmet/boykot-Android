@@ -13,4 +13,6 @@ public interface APIService {
     Call<List<BoykotMarka>> getAllBoykotUrunler();
     @GET("urunler/byType")
     Call<List<BoykotMarka>> getAllBoykotUrunlerByType(@Query("type") String type);
+    @GET("urunler/byBarkod")
+    Call<List<BoykotMarka>> getBoykotUrunByBarcot(@Query("barkod") String barkod);
 }

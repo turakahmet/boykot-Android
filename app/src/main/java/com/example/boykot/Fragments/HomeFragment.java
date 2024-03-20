@@ -37,7 +37,12 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         boykotRV= view.findViewById(R.id.idRVBoykot);
-
+        return view;
+    }
+    @Override
+    public void onStart() {
+        super.onStart();
+        tumBoykotListesi.clear();
         apiService= APIClient.getClient().create(APIService.class);
         Call<List<BoykotMarka>> listCall=apiService.getAllBoykotUrunler();
         listCall.enqueue(new Callback<List<BoykotMarka>>() {
@@ -57,11 +62,7 @@ public class HomeFragment extends Fragment {
                 Log.d("TAG",t.getMessage()+"");
             }
         });
-        return view;
     }
-    @Override
-    public void onPause() {
-        super.onPause();
-        tumBoykotListesi.clear();
-    }
+
+
 }

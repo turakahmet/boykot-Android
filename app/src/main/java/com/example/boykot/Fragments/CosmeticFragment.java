@@ -45,6 +45,7 @@ public class CosmeticFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
+        tumBoykotListesi.clear();
         apiService= APIClient.getClient().create(APIService.class);
         Call<List<BoykotMarka>> listCall=apiService.getAllBoykotUrunlerByType(UrunTip.KOZMETIK.getEtiket());
         listCall.enqueue(new Callback<List<BoykotMarka>>() {
@@ -66,9 +67,4 @@ public class CosmeticFragment extends Fragment {
         });
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        tumBoykotListesi.clear();
-    }
 }

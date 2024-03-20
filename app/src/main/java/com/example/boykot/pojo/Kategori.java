@@ -1,24 +1,29 @@
 package com.example.boykot.pojo;
 
+import android.content.Context;
+
+import com.example.boykot.R;
+
 public enum Kategori {
-    HEPSI("Hepsi"),
-    GIDA("Gıda"),
-    ICECEK("İçecek"),
-    TEMIZLIK("Temizlik"),
-    KOZMETIK("Kozmetik"),
-    MEDYA("Medya"),
-    TEKNOLOJI("Teknoloji"),
-    SIGARA("Sigara"),
-    AKARYAKIT("Akaryakıt"),
-    ILAC("İlaç"),
-    DIGER("Diğer");
+    HEPSI(R.string.HEPSI),
+    GIDA(R.string.GIDA),
+    ICECEK(R.string.ICECEK),
+    TEMIZLIK(R.string.TEMIZLIK),
+    KOZMETIK(R.string.KOZMETIK),
+    MEDYA(R.string.MEDYA),
+    TEKNOLOJI(R.string.TEKNOLOJI),
+    SIGARA(R.string.SIGARA),
+    AKARYAKIT(R.string.AKARYAKIT),
+    ILAC(R.string.ILAC),
+    DIGER(R.string.DIGER);
 
+    private int stringResourceID;
 
-    public String etiket;
-    Kategori(String etiket) {
-        this.etiket = etiket;
+    Kategori(int stringResourceID) {
+        this.stringResourceID = stringResourceID;
     }
-    public String getEtiket() {
-        return etiket;
+
+    public String getEtiket(Context context) {
+        return context.getString(stringResourceID);
     }
 }
