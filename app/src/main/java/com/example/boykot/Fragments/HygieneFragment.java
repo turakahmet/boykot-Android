@@ -29,6 +29,8 @@ import retrofit2.Response;
 public class HygieneFragment extends Fragment {
 
     private RecyclerView boykotFoodRV;
+
+    private View view;
     private APIService apiService;
     private List<BoykotMarka> tumBoykotListesi=new ArrayList<>();
     private RecyclerViewBoykotAdapter recyclerViewBoykotAdapter;
@@ -37,7 +39,7 @@ public class HygieneFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_hygiene, container, false);
+        view = inflater.inflate(R.layout.fragment_hygiene, container, false);
         boykotFoodRV= view.findViewById(R.id.idRVHygiene);
         return view;
     }
@@ -67,4 +69,7 @@ public class HygieneFragment extends Fragment {
         });
     }
 
+    public View getRootView() {
+        return view;
+    }
 }

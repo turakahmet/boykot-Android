@@ -19,4 +19,5 @@
     <string name="DIGER">Other</string>
     <string name="boykotUrun">This product is among the boycotted products.</string>
     <string name="boykotUrunDegil">This product is not among the boycotted products.</string>
+    <string name="search">Search</string>
 </resources>

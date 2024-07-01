@@ -35,6 +35,9 @@
             tools:replace="android:screenOrientation"
             android:stateNotNeeded="true"/>
 
+        <activity android:name=".main.SearchList"/>
+
+
     </application>
 
 </manifest>

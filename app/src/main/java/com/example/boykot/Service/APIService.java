@@ -15,4 +15,7 @@ public interface APIService {
     Call<List<BoykotMarka>> getAllBoykotUrunlerByType(@Query("type") String type);
     @GET("urunler/byBarkod")
     Call<List<BoykotMarka>> getBoykotUrunByBarcot(@Query("barkod") String barkod);
+    @GET("urunler/autocomplete")
+    Call<List<BoykotMarka>> getAutocompleteUrunAdi(@Query("search") String searchKey);
+
 }

@@ -18,4 +18,5 @@
     <string name="DIGER">Diğer</string>
     <string name="boykotUrun">Bu ürün boykot edilen ürünler \nİÇERİSİNDEDİR.</string>
     <string name="boykotUrunDegil">Bu ürün boykot edilen ürünler içerisinde \nDEĞİLDİR.</string>
+    <string name="search">Arama</string>
 </resources>

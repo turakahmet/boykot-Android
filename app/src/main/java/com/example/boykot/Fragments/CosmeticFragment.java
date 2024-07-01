@@ -30,14 +30,15 @@ public class CosmeticFragment extends Fragment {
 
     private RecyclerView boykotFoodRV;
     private APIService apiService;
+
+    private View view;
     private List<BoykotMarka> tumBoykotListesi=new ArrayList<>();
     private RecyclerViewBoykotAdapter recyclerViewBoykotAdapter;
     private LinearLayoutManager linearLayoutManager;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        View view = inflater.inflate(R.layout.fragment_cosmetic, container, false);
+        view = inflater.inflate(R.layout.fragment_cosmetic, container, false);
         boykotFoodRV= view.findViewById(R.id.idRVCosmetic);
         return view;
     }
@@ -67,4 +68,7 @@ public class CosmeticFragment extends Fragment {
         });
     }
 
+    public View getRootView() {
+        return view;
+    }
 }
